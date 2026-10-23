@@ -42,3 +42,18 @@ next-env.d.ts
 
 # env example is tracked
 !.env.example
+
+# MS security: local credentials and operational backups
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.vercel/
+*.private-key.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.dump
+*.backup
