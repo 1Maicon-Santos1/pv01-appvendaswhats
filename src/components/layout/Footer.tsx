@@ -1,3 +1,4 @@
+import { MsAgencyCredit } from "./MsAgencyCredit";
 import { ANCHORS, BRAND } from "@/config/site";
 import { Container } from "@/components/ui/Section";
 import { Logo } from "./Logo";
@@ -6,6 +7,7 @@ export function Footer({ logoSrc }: { logoSrc: string | null }) {
   const year = new Date().getFullYear();
 
   return (
+    <>
     <footer className="border-t border-line bg-[#030c08] py-12 sm:py-14">
       <Container>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
@@ -64,5 +66,7 @@ export function Footer({ logoSrc }: { logoSrc: string | null }) {
         </div>
       </Container>
     </footer>
+      <MsAgencyCredit />
+    </>
   );
 }
